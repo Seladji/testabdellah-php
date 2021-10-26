@@ -8,6 +8,12 @@
 </head>
 <body>
 <h1>Ma page web</h1>
-        <p>Aujourd'hui nous sommes le <?php echo date('d/m/Y h:i:s'); ?>.</p>
+<?php $chickenRecipesEnabled = false; ?>
+
+<?php if ($chickenRecipesEnabled): ?> <!-- Ne pas oublier le ":" -->
+
+<h1>Liste des recettes à base de poulet</h1>
+
+<?php endif; ?><!-- Ni le ";" après le endif -->
 </body>
 </html>
